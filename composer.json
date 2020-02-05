@@ -1,0 +1,21 @@
+{
+    "name": "tlingc/think-lang",
+    "description": "ThinkPHP 6.0 multilingual package",
+    "require": {
+        "php": ">=7.1",
+        "topthink/framework": "^6.0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TLingC",
+            "email": "my@tlingc.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "tlingc\\lang\\": "src"
+        }
+    },
+    "minimum-stability": "stable"
+}
