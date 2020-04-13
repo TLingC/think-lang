@@ -48,9 +48,11 @@ class LoadLangPack
 
         // 加载应用语言包
         $files = [];
-        $files = array_merge(glob($this->appPath.'lang'.DIRECTORY_SEPARATOR.$langset.'.*'),
-                                glob($this->appPath.'lang'.DIRECTORY_SEPARATOR.$langset.DIRECTORY_SEPARATOR.'*'),
-                                glob($this->appPath.'lang'.DIRECTORY_SEPARATOR.$langset.DIRECTORY_SEPARATOR.'*'.DIRECTORY_SEPARATOR.'*'));
+        $files = array_merge(
+            glob($this->appPath.'lang'.DIRECTORY_SEPARATOR.$langset.'.*'),
+            glob($this->appPath.'lang'.DIRECTORY_SEPARATOR.$langset.DIRECTORY_SEPARATOR.'*'),
+            glob($this->appPath.'lang'.DIRECTORY_SEPARATOR.$langset.DIRECTORY_SEPARATOR.'*'.DIRECTORY_SEPARATOR.'*')
+        );
         $this->lang->load($files);
 
         // 加载扩展（自定义）语言包
