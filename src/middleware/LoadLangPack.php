@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace tlingc\lang\middleware;
+namespace tlingc\think\lang\middleware;
 
 use Closure;
 use think\App;

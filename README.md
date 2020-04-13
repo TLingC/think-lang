@@ -22,7 +22,7 @@ composer require tlingc/think-lang
 #### 开启和加载语言包
 中间件名称为：
 ```php
-'tlingc\lang\middleware\LoadLangPack',
+'tlingc\think\lang\middleware\LoadLangPack',
 ```
 由于多语言通过二级目录访问，`使用Cookie保存语言` 功能无效。
 
